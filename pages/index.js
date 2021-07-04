@@ -31,6 +31,10 @@ export default function Home() {
             width={ 300 } 
           />
         </div>
+        <div className="spacer--large"/>
+        <h2 className="side-padding">
+          Recent disasters
+        </h2>
         <div className={ styles.posts }>
           { posts.map((post) => (
             <Post

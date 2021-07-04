@@ -19,9 +19,9 @@ export const Post = ({ post }) => {
                 className={ styles.image }
             />
             <div className={ styles.header }>
-                <h2>
+                <h3>
                     { meta.title }
-                </h2>
+                </h3>
                 <p>
                     { meta.description }
                 </p>

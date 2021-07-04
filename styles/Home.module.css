@@ -20,6 +20,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;
-  margin: 8rem 0;
-  padding: 0 var(--side-padding);
+  padding: 4rem var(--side-padding);
+  background-color: var(--background-faded);
 }
