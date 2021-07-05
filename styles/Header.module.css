@@ -1,4 +1,13 @@
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 4rem var(--side-padding);
+}
+.logo {
+    cursor: pointer;
+    width: 120px;
+    transition: var(--transition-standard);
+}
+.logo:hover {
+    opacity: .6;
 }
