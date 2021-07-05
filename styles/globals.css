@@ -1,4 +1,4 @@
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 :root {
@@ -7,8 +7,9 @@
   --background: #F4F4F4;
   --background-faded: #00800010;
   --foreground: white;
-  --transition-standard: cubic-bezier(.165, .84, .44, 1);
-  --side-padding: 4%;
+  --transition-standard: .6s all cubic-bezier(.165, .84, .44, 1);
+  --side-padding: 4vw;
+  --side-padding-blog: 25vw;
 }
 html,
 body {
@@ -28,10 +29,33 @@ img {
   border-radius: 10px;
 }
 h1, h2, .text--large {
-  font-size: 2.6rem;
+  font-size: calc(30px + (36 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 h3, .text--small {
-  font-size: 1.6rem;
+  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+p, a {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  transition: var(--transition-standard);
+}
+a {
+  width: fit-content;
+  position: relative;
+}
+a:hover {
+  opacity: .6;
+}
+a:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent-primary);
+  transition: var(--transition-standard);
+}
+a:hover:before {
+  width: 100%;
 }
 
 /* Other Elements */
@@ -45,4 +69,16 @@ h3, .text--small {
 /* Tailwinds */
 .side-padding {
   padding: 0 var(--side-padding);
+}
+
+/* Responsive */
+@media (max-width: 1440px) {
+  :root {
+    --side-padding-blog: 20vw;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --side-padding-blog: 10vw; 
+  }
 }

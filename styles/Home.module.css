@@ -18,8 +18,23 @@
 /* Posts */
 .posts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
   padding: 4rem var(--side-padding);
   background-color: var(--background-faded);
+}
+
+/* Responsive */
+@media (max-width: 1440px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    text-align: center;
+  }
 }

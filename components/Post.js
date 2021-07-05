@@ -25,12 +25,12 @@ export const Post = ({ post }) => {
                 <p>
                     { meta.description }
                 </p>
+                <Link href={ `/blog${link} `}>
+                    <a>
+                        Read more
+                    </a>
+                </Link>
             </div>
-            <Link href={ `/blog${link} `}>
-                <a>
-                    Read more
-                </a>
-            </Link>
         </article>
     )
 }

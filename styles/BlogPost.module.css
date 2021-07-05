@@ -1,0 +1,16 @@
+.article {
+    margin: 4rem 0;
+    padding: 0 var(--side-padding-blog);
+}
+.header > div:first-child {
+    display: flex !important;
+    margin: 4rem auto !important;
+}
+.header > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+.header > div:last-child * {
+    font-weight: bold;
+    margin: 0;
+}
