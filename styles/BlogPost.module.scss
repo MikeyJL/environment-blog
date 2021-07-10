@@ -1,0 +1,23 @@
+@import './variables';
+
+.article {
+    margin: 4rem 0;
+    padding: 0 $side-padding-blog;
+}
+.header {
+    > div {
+        &:first-child {
+            display: flex !important;
+            margin: 4rem auto !important;
+        }
+        &:last-child {
+            display: flex;
+            justify-content: space-between;
+
+            * {
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+    }
+}

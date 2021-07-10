@@ -1,30 +1,32 @@
+@import './variables';
+
 .intro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
   margin: 4rem 0;
-  padding: 0 var(--side-padding); 
-}
-.header {
-  display: grid;
-  grid-gap: 1rem;
-  margin: auto;
-  text-align: right;
-}
-.header * {
-  margin: 0;
+  padding: 0 $side-padding; 
+
+  .header {
+    display: grid;
+    grid-gap: 1rem;
+    margin: auto;
+    text-align: right;
+    
+    * {
+      margin: 0;
+    }
+  }
 }
 
-/* Posts */
 .posts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
-  padding: 4rem var(--side-padding);
-  background-color: var(--background-faded);
+  padding: 4rem $side-padding;
+  background-color: $background-faded;
 }
 
-/* Responsive */
 @media (max-width: 1440px) {
   .posts {
     grid-template-columns: 1fr;
@@ -33,8 +35,9 @@
 @media (max-width: 768px) {
   .intro {
     grid-template-columns: 1fr;
-  }
-  .header {
-    text-align: center;
+
+    .header {
+      text-align: center;
+    }
   }
 }

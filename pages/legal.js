@@ -1,4 +1,4 @@
-import styles from '../styles/Legal.module.css'
+import styles from '../styles/Legal.module.scss'
 
 export default function Legal () {
     return (

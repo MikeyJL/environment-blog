@@ -1,5 +1,6 @@
+import Link from 'next/link'
 import { Component } from 'react'
-import styles from '../styles/Footer.module.css'
+import styles from '../styles/Footer.module.scss'
 
 export default class Footer extends Component {
     render () {
@@ -7,12 +8,12 @@ export default class Footer extends Component {
             <footer className={ styles.footer }>
                 <div>
                     <p>
-                        <b>Environment First</b> Copyright 2021
+                        <strong>Environment First</strong> Copyright 2021
                     </p>
                 </div>
-                <div>
-                
-                </div>
+                <p>
+                    Built by <Link href="https://mikeylau.uk">Mikey Lau</Link>
+                </p>        
             </footer>
         )
     }

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../styles/BlogPost.module.css'
+import styles from '../styles/BlogPost.module.scss'
 
 export default function BlogPost ({ children, meta}) {
     return (

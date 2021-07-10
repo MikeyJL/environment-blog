@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Component } from 'react'
-import styles from '../styles/Header.module.css'
+import styles from '../styles/Header.module.scss'
 
 export default class Header extends Component {
     render () {

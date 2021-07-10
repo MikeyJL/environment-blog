@@ -1,7 +1,7 @@
 import Header from './Header'
 import Footer from './Footer'
 import { useState, useEffect } from "react";
-import styles from '../styles/Layout.module.css'
+import styles from '../styles/Layout.module.scss'
 
 export default function Layout ({ children }) {
     const [displayChildren, setDisplayChildren] = useState(children)

@@ -1,0 +1,9 @@
+@import './variables';
+
+.content {
+    opacity: 0;
+    transition: $transition-standard;
+}
+.fadeIn {
+    opacity: 1;
+}

@@ -1,8 +1,0 @@
-/* Page anim */
-.content {
-    opacity: 0;
-    transition: var(--transition-standard);
-}
-.fadeIn {
-    opacity: 1;
-}

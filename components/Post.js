@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/Post.module.css'
+import styles from '../styles/Post.module.scss'
 
 export const Post = ({post}) => {
     const {
