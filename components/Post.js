@@ -11,13 +11,11 @@ export const Post = ({post}) => {
     return (
         <article className={styles.article}>
             <Image
-                src={`/img/${meta.image}`}
-                alt={meta.title}
-                layout="responsive"
+                src={`/svg/${meta.image}`}
                 height={300}
                 width={300}
+                alt={meta.title}
                 className={styles.image}
-                priority={true}
             />
             <div className={styles.header}>
                 <h3>

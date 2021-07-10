@@ -1,20 +1,12 @@
 @import './variables';
 
-.header {
+.nav {
     display: flex;
     justify-content: space-between;
     padding: 4rem $side-padding;
 
-    .logo {
-        cursor: pointer;
-        width: 120px;
-        transition: $transition-standard;
-
-        &:hover {
-            opacity: .6;
-        }
-        path {
-            fill: $accent-secondary;
-        }
+    a {
+        font-size: $text-small;
+        font-weight: bold;
     }
 }

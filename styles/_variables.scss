@@ -5,3 +5,6 @@ $foreground: white;
 $transition-standard: .6s all cubic-bezier(.165, .84, .44, 1);
 $side-padding: 4vw;
 $side-padding-blog: 25vw;
+$text-large: calc(30px + (46 - 30) * ((100vw - 300px) / (1600 - 300)));
+$text-small: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+$text-normal:calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
