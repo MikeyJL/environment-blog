@@ -3,10 +3,26 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 20vh;
     padding: 2rem $side-padding;
+    border-top: 3px solid $accent-primary;
 
-    .author a {
-        font-weight: bold;
+    .author {
+        text-align: right;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        display: grid;
+        justify-content: inherit;
+        
+        .author {
+            text-align: left;
+        }
     }
 }

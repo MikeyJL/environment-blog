@@ -12,7 +12,9 @@ export default class Footer extends Component {
                     </p>
                 </div>
                 <p className={styles.author}>
-                    Built by <a href="https://mikeylau.uk" target="_blank" rel="noreferrer">Mikey Lau</a>
+                    Built by <a href="https://mikeylau.uk" target="_blank" rel="noreferrer">Mikey Lau</a><br />
+                    Designed in <strong>Figma</strong><br />
+                    Hosted on <strong>Vercel</strong>
                 </p>        
             </footer>
         )
