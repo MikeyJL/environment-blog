@@ -11,8 +11,8 @@ export default class Footer extends Component {
                         <strong>Environment First</strong> Copyright 2021
                     </p>
                 </div>
-                <p>
-                    Built by <Link href="https://mikeylau.uk">Mikey Lau</Link>
+                <p className={styles.author}>
+                    Built by <a href="https://mikeylau.uk" target="_blank" rel="noreferrer">Mikey Lau</a>
                 </p>        
             </footer>
         )

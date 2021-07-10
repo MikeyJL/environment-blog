@@ -1,6 +1,12 @@
 @import './variables';
 
 .footer {
+    display: flex;
+    justify-content: space-between;
     margin-top: 4rem;
     padding: 2rem $side-padding;
+
+    .author a {
+        font-weight: bold;
+    }
 }

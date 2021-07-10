@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import Leaf from '../components/svg/Leaf'
 import styles from '../styles/Home.module.scss'
 import { Post } from '../components/Post'
 import { posts } from '../GetAllPosts'
@@ -16,21 +17,21 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.intro}>
           <div className={styles.header}>
-            <h1 className="accent-secondary">
-              The Earth needs your help.
-            </h1>
-            <p>
-              Find out how you can contribute and change things for the better.
-            </p>
+            <Image
+              src="/svg/earth.svg"
+              height={300}
+              width={300}
+              alt="Earth"
+            />
+            <div>
+              <h1 className="accent-secondary">
+                The Earth needs your help.
+              </h1>
+              <h3>
+                Find out how you can contribute and change things for the better.
+              </h3>
+            </div>
           </div>
-          <Image
-            src="/img/jungle.jpeg"
-            alt="Jungle"
-            layout="responsive"
-            height={450}
-            width={300} 
-            priority={true}
-          />
         </div>
         <div className="spacer--large"/>
         <h2 className="side-padding">
