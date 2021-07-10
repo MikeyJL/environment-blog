@@ -11,3 +11,6 @@
 .logo:hover {
     opacity: .6;
 }
+.logo path {
+    fill: var(--accent-secondary);
+}

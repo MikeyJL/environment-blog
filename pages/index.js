@@ -16,7 +16,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.intro}>
           <div className={styles.header}>
-            <h1>
+            <h1 className="accent-secondary">
               The Earth needs your help.
             </h1>
             <p>
@@ -27,8 +27,9 @@ export default function Home() {
             src="/img/jungle.jpeg"
             alt="Jungle"
             layout="responsive"
-            height={ 450 }
-            width={ 300 } 
+            height={450}
+            width={300} 
+            priority={true}
           />
         </div>
         <div className="spacer--large"/>

@@ -3,9 +3,9 @@
 }
 :root {
   --accent-primary: #050505;
-  --accent-secondary: #008000;
+  --accent-secondary: #096309;
   --background: #F4F4F4;
-  --background-faded: #00800010;
+  --background-faded: #09630920;
   --foreground: white;
   --transition-standard: .6s all cubic-bezier(.165, .84, .44, 1);
   --side-padding: 4vw;
@@ -69,6 +69,9 @@ a:hover:before {
 /* Tailwinds */
 .side-padding {
   padding: 0 var(--side-padding);
+}
+.accent-secondary {
+  color: var(--accent-secondary);
 }
 
 /* Responsive */

@@ -1,4 +1,5 @@
 import Header from './Header'
+import Footer from './Footer'
 import { useState, useEffect } from "react";
 import styles from '../styles/Layout.module.css'
 
@@ -28,16 +29,7 @@ export default function Layout ({ children }) {
             >
                 { displayChildren }   
             </div>
-            <footer className={ styles.footer }>
-                <div>
-                    <p>
-                        <b>Environment First</b> Copyright 2021
-                    </p>
-                </div>
-                <div>
-                
-                </div>
-            </footer>
+            <Footer />
         </div>
     )
 }
